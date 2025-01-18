@@ -47,15 +47,16 @@ export default function HomePage() {
   };
 
   return (
-    <div
-      style={{
-        backgroundImage: `url('./images/bgmovie.jpg')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-      className="min-h-screen flex items-center justify-center"
-    >
+    <div className="relative min-h-screen flex items-center justify-center bg-gray-900">
+      <div
+        style={{
+          backgroundImage: `url('./images/bgmovie.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+        className="absolute inset-0 before:absolute before:inset-0 before:filter before:blur-lg before:bg-cover"
+      ></div>
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
       <div className="relative container mx-auto p-6 flex flex-row space-x-8">
